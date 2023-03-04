@@ -1,16 +1,16 @@
 <template>
-  <div class="flex flex-col w-screen h-full bg-gray-100">
+  <div class="flex flex-col w-full h-[300px] justify-center items-center bg-gray-200">
     <form @submit.prevent="onSubmit">
-      <div>
-        <label for="name">Name:</label>
-        <input type="text" id="name" v-model="name" />
+      <div class="p-4 flex flex-row">
+        <label class="w-[70px]" for="name">Name:</label>
+        <input type="text" id="name" v-model="name" class="rounded" />
+      </div>
+      <div class="p-4 flex flex-row justify-center">
+        <label class="w-[70px]" for="age">Age:</label>
+        <input type="number" id="age" v-model.number="age" class="rounded" />
       </div>
       <div>
-        <label for="age">Age:</label>
-        <input type="number" id="age" v-model.number="age" />
-      </div>
-      <div>
-        <button type="submit">Submit</button>
+        <button type="submit" class="p-3 flex justify-center hover:bg-blue-100 items-center mt-5 rounded-lg cursor-pointer bg-blue-200 ml-auto w-[200px]">Submit</button>
       </div>
     </form>
   </div>
