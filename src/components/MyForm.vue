@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="flex flex-col w-screen h-full bg-gray-100">
     <form @submit.prevent="onSubmit">
       <div>
         <label for="name">Name:</label>
@@ -31,3 +31,7 @@ export default {
   }
 };
 </script>
+
+<style lang="css">
+  @import "@/assets/main.css";
+</style>

@@ -1,16 +1,16 @@
 <template>
   <div id="app">
-    <Form />
+    <MyForm />
   </div>
 </template>
 
 <script>
-import Form from "./components/MyForm.vue";
+import MyForm from "./components/MyForm.vue";
 
 export default {
   name: "App",
   components: {
-    Form
+    MyForm
   }
 };
 </script>
